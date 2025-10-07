@@ -27,7 +27,7 @@ services:
     networks:
       - proxy
   mediaflow_proxy:
-    image: qwertyuiop8899/mediaflow-proxy:latest
+    image: Johnnymnem/mediaflow-proxy:latest
     container_name: mediaflow_proxy
     env_file:
       - ./mfp/.env
@@ -55,7 +55,7 @@ services:
   #  networks:
   #    - proxy
   streamv:
-    image: qwertyuiop8899/streamvix:latest
+    image: Johnnymnem/StreamViX_JM:latest
     container_name: streamv
     env_file:
       - ./streamv/.env
@@ -68,7 +68,7 @@ volumes:
   npm-data:
   npm-letsencrypt:
   duckdns-data:
-  aiostreams-data:
+  #aiostreams-data:
 
 networks:
   proxy:
